@@ -1,0 +1,146 @@
+# -------------------------------------------------
+# Innuvatech boards.txt definition
+# For more info: https://arduino.github.io/arduino-cli/latest/platform-specification/
+# -------------------------------------------------
+
+menu.pnum=Board part number
+
+menu.xserial=U(S)ART support
+menu.usb=USB support (if available)
+menu.xusb=USB speed (if available)
+menu.virtio=Virtual serial support
+
+menu.opt=Optimize
+menu.dbg=Debug symbols and core logs
+menu.rtlib=C Runtime Library
+menu.upload_method=Upload method
+
+# PatchugoSeries definition
+
+PatchugoSeries.name=PatchugoSeries
+
+PatchugoSeries.build.core=arduino
+PatchugoSeries.build.board=PatchugoSeries
+PatchugoSeries.build.st_extra_flags=-DCORE_CM7 -D{build.product_line} {build.enable_usb} {build.xSerial}
+PatchugoSeries.build.fpu=-mfpu=fpv4-sp-d16
+PatchugoSeries.build.float-abi=-mfloat-abi=hard
+PatchugoSeries.build.series=STM32H7xx
+PatchugoSeries.build.mcu=cortex-m7
+PatchugoSeries.build.flash_offset=0x0
+PatchugoSeries.upload.maximum_size=0
+PatchugoSeries.upload.maximum_data_size=0
+PatchugoSeries.openocd.target=stm32h7x
+PatchugoSeries.vid.0=0x0483
+PatchugoSeries.pid.0=0x5740
+
+#PatchugOne board
+PatchugoSeries.menu.pnum.PatchugOne=PatchugoLite
+PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_size=2097152
+PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_data_size=524288
+PatchugoSeries.menu.pnum.PatchugOne.build.board=PatchugoLite
+PatchugoSeries.menu.pnum.PatchugOne.build.product_line=STM32H753xx
+PatchugoSeries.menu.pnum.PatchugOne.build.variant_h=variant_patchugolite.h
+PatchugoSeries.menu.pnum.PatchugOne.build.variant=STM32H7xx/H742Z(G-I)T_H743Z(G-I)T_H747A(G-I)I_H747I(G-I)T_H750ZBT_H753ZIT_H757AII_H757IIT
+# PatchugoSeries.menu.pnum.PatchugOne.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
+PatchugoSeries.menu.pnum.PatchugOne.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
+# PatchugoSeries.menu.pnum.PatchugOne.build.st_extra_flags=-DCORE_CM7 -D{build.product_line} {build.enable_usb} {build.xSerial} -DARDUINO_PatchugoLite
+
+# Upload menu
+PatchugoSeries.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
+PatchugoSeries.menu.upload_method.swdMethod.upload.protocol=swd
+PatchugoSeries.menu.upload_method.swdMethod.upload.options=
+PatchugoSeries.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
+
+PatchugoSeries.menu.upload_method.jlinkMethod=STM32CubeProgrammer (J-Link)
+PatchugoSeries.menu.upload_method.jlinkMethod.upload.protocol=jlink
+PatchugoSeries.menu.upload_method.jlinkMethod.upload.options=
+PatchugoSeries.menu.upload_method.jlinkMethod.upload.tool=stm32CubeProg
+
+PatchugoSeries.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
+PatchugoSeries.menu.upload_method.serialMethod.upload.protocol=serial
+PatchugoSeries.menu.upload_method.serialMethod.upload.options=-c {serial.port.file}
+PatchugoSeries.menu.upload_method.serialMethod.upload.tool=stm32CubeProg
+
+PatchugoSeries.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
+PatchugoSeries.menu.upload_method.dfuMethod.upload.protocol=dfu
+PatchugoSeries.menu.upload_method.dfuMethod.upload.options=-v {upload.vid} -p {upload.pid}
+PatchugoSeries.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+PatchugoSeries.menu.upload_method.bmpMethod=BMP (Black Magic Probe)
+PatchugoSeries.menu.upload_method.bmpMethod.upload.protocol=gdb_bmp
+PatchugoSeries.menu.upload_method.bmpMethod.upload.tool=bmp_upload
+
+PatchugoSeries.menu.upload_method.OpenOCDSTLink=OpenOCD STLink (SWD)
+PatchugoSeries.menu.upload_method.OpenOCDSTLink.upload.protocol=stlink
+PatchugoSeries.menu.upload_method.OpenOCDSTLink.upload.tool=openocd_upload
+
+PatchugoSeries.menu.upload_method.OpenOCDDapLink=OpenOCD DapLink (SWD)
+PatchugoSeries.menu.upload_method.OpenOCDDapLink.upload.protocol=cmsis-dap
+PatchugoSeries.menu.upload_method.OpenOCDDapLink.upload.tool=openocd_upload
+
+# Optimizations
+
+PatchugoSeries.menu.opt.osstd=Smallest (-Os default)
+PatchugoSeries.menu.opt.oslto=Smallest (-Os) with LTO
+PatchugoSeries.menu.opt.oslto.build.flags.optimize=-Os -flto
+PatchugoSeries.menu.opt.o1std=Fast (-O1)
+PatchugoSeries.menu.opt.o1std.build.flags.optimize=-O1
+PatchugoSeries.menu.opt.o1lto=Fast (-O1) with LTO
+PatchugoSeries.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+PatchugoSeries.menu.opt.o2std=Faster (-O2)
+PatchugoSeries.menu.opt.o2std.build.flags.optimize=-O2
+PatchugoSeries.menu.opt.o2lto=Faster (-O2) with LTO
+PatchugoSeries.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+PatchugoSeries.menu.opt.o3std=Fastest (-O3)
+PatchugoSeries.menu.opt.o3std.build.flags.optimize=-O3
+PatchugoSeries.menu.opt.o3lto=Fastest (-O3) with LTO
+PatchugoSeries.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+PatchugoSeries.menu.opt.ogstd=Debug (-Og)
+PatchugoSeries.menu.opt.ogstd.build.flags.optimize=-Og
+PatchugoSeries.menu.opt.o0std=No Optimization (-O0)
+PatchugoSeries.menu.opt.o0std.build.flags.optimize=-O0
+
+# USB Options
+
+PatchugoSeries.menu.usb.none=None
+PatchugoSeries.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+PatchugoSeries.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+PatchugoSeries.menu.usb.CDC=CDC (no generic 'Serial')
+PatchugoSeries.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+PatchugoSeries.menu.usb.HID=HID (keyboard and mouse)
+PatchugoSeries.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
+PatchugoSeries.menu.xusb.FS=Low/Full Speed
+PatchugoSeries.menu.xusb.HS=High Speed
+PatchugoSeries.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
+PatchugoSeries.menu.xusb.HSFS=High Speed in Full Speed mode
+PatchugoSeries.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
+
+# Serial
+
+PatchugoSeries.menu.xserial.generic=Enabled (generic 'Serial')
+PatchugoSeries.menu.xserial.none=Enabled (no generic 'Serial')
+PatchugoSeries.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+PatchugoSeries.menu.xserial.disabled=Disabled (No Serial support)
+PatchugoSeries.menu.xserial.disabled.build.xSerial=
+
+# Rtlib
+
+PatchugoSeries.menu.rtlib.nano=Newlib Nano (default)
+PatchugoSeries.menu.rtlib.nanofp=Newlib Nano + Float Printf
+PatchugoSeries.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+PatchugoSeries.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+PatchugoSeries.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+PatchugoSeries.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+PatchugoSeries.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+PatchugoSeries.menu.rtlib.full=Newlib Standard
+PatchugoSeries.menu.rtlib.full.build.flags.ldspecs=
+
+#Debug options
+
+PatchugoSeries.menu.dbg.none=None
+PatchugoSeries.menu.dbg.enable_sym=Symbols Enabled (-g)
+PatchugoSeries.menu.dbg.enable_sym.build.flags.debug=-g -DNDEBUG
+PatchugoSeries.menu.dbg.enable_log=Core logs Enabled
+PatchugoSeries.menu.dbg.enable_log.build.flags.debug=
+PatchugoSeries.menu.dbg.enable_all=Core Logs and Symbols Enabled (-g)
+PatchugoSeries.menu.dbg.enable_all.build.flags.debug=-g
