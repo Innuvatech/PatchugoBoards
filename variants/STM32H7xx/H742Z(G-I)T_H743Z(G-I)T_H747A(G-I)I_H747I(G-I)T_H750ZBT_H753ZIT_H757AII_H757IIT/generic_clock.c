@@ -10,7 +10,7 @@
  *
  *******************************************************************************
  */
- #if defined(ARDUINO_PatchugOne)
+ #if defined(ARDUINO_PatchugoLite)
 #include "pins_arduino.h"
 
 /**
