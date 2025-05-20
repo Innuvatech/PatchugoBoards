@@ -201,7 +201,7 @@
  
  // SPI definitions
  #ifndef PIN_SPI_SS
-   #define PIN_SPI_SS            PA4
+   #define PIN_SPI_SS            PA15
  #endif
  #ifndef PIN_SPI_SS1
    #define PIN_SPI_SS1           PA15
@@ -213,13 +213,13 @@
    #define PIN_SPI_SS3           PNUM_NOT_DEFINED
  #endif
  #ifndef PIN_SPI_MOSI
-   #define PIN_SPI_MOSI          PA7
+   #define PIN_SPI_MOSI          PB5
  #endif
  #ifndef PIN_SPI_MISO
-   #define PIN_SPI_MISO          PA6
+   #define PIN_SPI_MISO          PB4
  #endif
  #ifndef PIN_SPI_SCK
-   #define PIN_SPI_SCK           PA5
+   #define PIN_SPI_SCK           PB11
  #endif
  
  // I2C definitions

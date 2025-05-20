@@ -15,32 +15,32 @@
 
  // Digital PinName array
  const PinName digitalPin[] = {
- PA_0,   // D0/A0
- PA_1,   // D1/A1
- PA_2,   // D2/A2
- PA_3,   // D3/A3
+ PE_7,   // D0/A0
+ PE_8,   // D1/A1
+ PB_9,   // D2/A2
+ PB_8,   // D3/A3
  PA_4,   // D4/A4
- PA_5,   // D5/A5
- PA_6,   // D6/A6
- PA_7,   // D7/A7
- PA_8,   // D8
- PA_9,   // D9
- PA_10,  // D10
- PA_11,  // D11
- PA_12,  // D12
- PA_13,  // D13
- PA_14,  // D14
- PA_15,  // D15
+ PB_7,   // D5/A5
+ PB_6,   // D6/A6
+ PG_0,   // D7/A7
+ PG_1,   // D8
+ PC_8,   // D9
+ PA_15,  // D10
+ PB_5,  // D11
+ PB_4,  // D12
+ PG_11,  // D13
+ PC_9,  // D14
+ PA_8,  // D15
  PB_0,   // D16/A8
  PB_1,   // D17/A9
  PB_2,   // D18
  PB_3,   // D19
- PB_4,   // D20
- PB_5,   // D21
- PB_6,   // D22
- PB_7,   // D23
- PB_8,   // D24
- PB_9,   // D25
+ PA_12,   // D20
+ PA_11,   // D21
+ PA_6,   // D22
+ PA_5,   // D23
+ PA_3,   // D24
+ PA_2,   // D25
  PB_10,  // D26
  PB_11,  // D27
  PB_12,  // D28
@@ -53,8 +53,8 @@
  PC_5,   // D35/A13
  PC_6,   // D36
  PC_7,   // D37
- PC_8,   // D38
- PC_9,   // D39
+ PA_9,   // D38
+ PA_14,   // D39
  PC_10,  // D40
  PC_11,  // D41
  PC_12,  // D42
@@ -84,8 +84,8 @@
  PE_4,   // D66
  PE_5,   // D67
  PE_6,   // D68
- PE_7,   // D69
- PE_8,   // D70
+ PA_0,   // D69
+ PA_1,   // D70
  PE_9,   // D71
  PE_10,  // D72
  PE_11,  // D73
@@ -109,8 +109,8 @@
  PF_13,  // D91/A24
  PF_14,  // D92/A25
  PF_15,  // D93
- PG_0,   // D94
- PG_1,   // D95
+ PA_7,   // D94
+ PA_10,   // D95
  PG_2,   // D96
  PG_3,   // D97
  PG_4,   // D98
@@ -120,7 +120,7 @@
  PG_8,   // D102
  PG_9,   // D103
  PG_10,  // D104
- PG_11,  // D105
+ PA_13,  // D105
  PG_12,  // D106
  PG_13,  // D107
  PG_14,  // D108
@@ -133,12 +133,12 @@
  
  // Analog (Ax) pin number array
  const uint32_t analogInputPin[] = {
- 0,  // A0,  PA0
- 1,  // A1,  PA1
- 2,  // A2,  PA2
- 3,  // A3,  PA3
- 4,  // A4,  PA4
- 5,  // A5,  PA5
+ PB_1,  // A0,  PA0
+ PC_5,  // A1,  PA1
+ PC_4,  // A2,  PA2
+ PA_7,  // A3,  PA3
+ PA_6,  // A4,  PA4
+ PA_5,  // A5,  PA5
  6,  // A6,  PA6
  7,  // A7,  PA7
  16, // A8,  PB0
