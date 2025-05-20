@@ -219,7 +219,7 @@
    #define PIN_SPI_MISO          PB4
  #endif
  #ifndef PIN_SPI_SCK
-   #define PIN_SPI_SCK           PB11
+   #define PIN_SPI_SCK           PG11
  #endif
  
  // I2C definitions
