@@ -15,120 +15,124 @@
  /*----------------------------------------------------------------------------
   *        STM32 pins number
   *----------------------------------------------------------------------------*/
- #define PA0                     PIN_A0
- #define PA1                     PIN_A1
- #define PA2                     PIN_A2
- #define PA3                     PIN_A3
- #define PA4                     PIN_A4
- #define PA5                     PIN_A5
- #define PA6                     PIN_A6
- #define PA7                     PIN_A7
- #define PA8                     8
- #define PA9                     9
- #define PA10                    10
- #define PA11                    11
- #define PA12                    12
- #define PA13                    13
- #define PA14                    14
- #define PA15                    15
- #define PB0                     PIN_A8
- #define PB1                     PIN_A9
- #define PB2                     18
- #define PB3                     19
- #define PB4                     20
- #define PB5                     21
- #define PB6                     22
- #define PB7                     23
- #define PB8                     24
- #define PB9                     25
- #define PB10                    26
- #define PB11                    27
- #define PB12                    28
- #define PB13                    29
- #define PB14                    30
- #define PB15                    31
- #define PC0                     PIN_A10
- #define PC1                     PIN_A11
- #define PC4                     PIN_A12
- #define PC5                     PIN_A13
- #define PC6                     36
- #define PC7                     37
- #define PC8                     38
- #define PC9                     39
- #define PC10                    40
- #define PC11                    41
- #define PC12                    42
- #define PC13                    43
- #define PC14                    44
- #define PC15                    45
- #define PD0                     46
- #define PD1                     47
- #define PD2                     48
- #define PD3                     49
- #define PD4                     50
- #define PD5                     51
- #define PD6                     52
- #define PD7                     53
- #define PD8                     54
- #define PD9                     55
- #define PD10                    56
- #define PD11                    57
- #define PD12                    58
- #define PD13                    59
- #define PD14                    60
- #define PD15                    61
- #define PE0                     62
- #define PE1                     63
- #define PE2                     64
- #define PE3                     65
- #define PE4                     66
- #define PE5                     67
- #define PE6                     68
- #define PE7                     69
- #define PE8                     70
- #define PE9                     71
- #define PE10                    72
- #define PE11                    73
- #define PE12                    74
- #define PE13                    75
- #define PE14                    76
- #define PE15                    77
- #define PF0                     78
- #define PF1                     79
- #define PF2                     80
- #define PF3                     PIN_A14
- #define PF4                     PIN_A15
- #define PF5                     PIN_A16
- #define PF6                     PIN_A17
- #define PF7                     PIN_A18
- #define PF8                     PIN_A19
- #define PF9                     PIN_A20
- #define PF10                    PIN_A21
- #define PF11                    PIN_A22
- #define PF12                    PIN_A23
- #define PF13                    PIN_A24
- #define PF14                    PIN_A25
- #define PF15                    93
- #define PG0                     94
- #define PG1                     95
- #define PG2                     96
- #define PG3                     97
- #define PG4                     98
- #define PG5                     99
- #define PG6                     100
- #define PG7                     101
- #define PG8                     102
- #define PG9                     103
- #define PG10                    104
- #define PG11                    105
- #define PG12                    106
- #define PG13                    107
- #define PG14                    108
- #define PG15                    109
- #define PH0                     110
- #define PH1                     111
- #define PC2_C                   PIN_A26
- #define PC3_C                   PIN_A27
+#define PE7   0
+#define PE8   1
+#define PB9   2
+#define PB8   3
+#define PA4   4
+#define PB7   5
+#define PB6   6
+#define PG0   7
+#define PG1   8
+#define PC8   9
+#define PA15  10
+#define PB5   11
+#define PB4   12
+#define PG11  13
+#define PC9   14
+#define PA8   15
+#define PC3_C 16
+#define PC1   17
+#define PF8   18
+#define PF6   19
+#define PF5   20
+#define PF4   21
+#define PF3   22
+#define PF2   23
+#define PF7   24
+#define PF1   25
+#define PF0   26
+#define PE6   27
+#define PE5   28
+#define PE4   29
+#define PE3   30
+#define PE2   31
+//Analog pins
+#define PB1   PIN_A0
+#define PC5   PIN_A1
+#define PC4   PIN_A2
+#define PA7   PIN_A3
+#define PA6   PIN_A4
+#define PA5   PIN_A5
+//Other pins
+#define PC13  38
+#define PC14  39
+#define PC15  40
+#define PF9   41
+#define PF10  42
+#define PH0   43
+#define PH1   44
+#define PC0   45
+#define PC2_C 46
+#define PA0   47
+#define PA1   48
+#define PA2   49
+#define PA3   50
+#define PB0   51
+#define PB2   52
+#define PF11  53
+#define PF12  54
+#define PF13  55
+#define PF14  56
+#define PF15  57
+#define PE9   58
+#define PE10  59
+#define PE11  60
+#define PE12  61
+#define PE13  62
+#define PE14  63
+#define PE15  64
+#define PB10  65
+#define PB11  66
+#define PB12  67
+#define PB13  68
+#define PB14  69
+#define PB15  70
+#define PD8   71
+#define PD9   72
+#define PD10  73
+#define PD11  74
+#define PD12  75
+#define PB13  76
+#define PB14  77
+#define PD15  78
+#define PG2   79
+#define PG3   80
+#define PG4   81
+#define PG5   82
+#define PG6   83
+#define PG7   84
+#define PG8   85
+#define PC6   86
+#define PC7   87
+#define PA9   88
+#define PA10  89
+#define PA11  90
+#define PA12  91
+#define PA13  92
+#define PA14  93
+#define PC10  94
+#define PC11  95
+#define PC12  96
+#define PD0   97
+#define PD1   98
+#define PD2   99
+#define PD3   100
+#define PD4   101
+#define PD5   102
+#define PD6   103
+#define PD7   104
+#define PG9   105
+#define PG10  106
+#define PG12  107
+#define PG13  108
+#define PG14  109
+#define PG15  107
+#define PB3   108
+#define PE0   109
+#define PE1   110
+
+
  
  // Alternate pins number
  #define PA0_ALT1                (PA0  | ALT1)
@@ -201,7 +205,7 @@
  
  // SPI definitions
  #ifndef PIN_SPI_SS
-   #define PIN_SPI_SS            PA15
+   #define PIN_SPI_SS            PA4
  #endif
  #ifndef PIN_SPI_SS1
    #define PIN_SPI_SS1           PA15

@@ -33,7 +33,7 @@
 
 /* Arduino analog pins */
 #ifndef NUM_ANALOG_INPUTS
-  #define NUM_ANALOG_INPUTS 0
+  #define NUM_ANALOG_INPUTS 6
 #endif
 
 /* Analog internal pin numbers follow the analog pin number */
