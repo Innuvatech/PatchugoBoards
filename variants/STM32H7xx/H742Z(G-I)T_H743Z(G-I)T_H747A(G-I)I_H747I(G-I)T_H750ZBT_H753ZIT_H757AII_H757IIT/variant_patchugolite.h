@@ -127,10 +127,10 @@
 #define PG12  107
 #define PG13  108
 #define PG14  109
-#define PG15  107
-#define PB3   108
-#define PE0   109
-#define PE1   110
+#define PG15  110
+#define PB3   111
+#define PE0   112
+#define PE1   113
 
 
  
