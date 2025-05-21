@@ -93,8 +93,8 @@
 #define PD10  73
 #define PD11  74
 #define PD12  75
-#define PB13  76
-#define PB14  77
+#define PD13  76
+#define PD14  77
 #define PD15  78
 #define PG2   79
 #define PG3   80
