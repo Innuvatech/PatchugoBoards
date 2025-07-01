@@ -35,15 +35,14 @@ PatchugoSeries.pid.0=0x5740
 
 #PatchugOne board
 PatchugoSeries.menu.pnum.PatchugOne=PatchugoLite
-PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_size=2097152
-PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_data_size=524288
+PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_size=524288
+PatchugoSeries.menu.pnum.PatchugOne.upload.maximum_data_size=131072
 PatchugoSeries.menu.pnum.PatchugOne.build.board=PatchugoLite
 PatchugoSeries.menu.pnum.PatchugOne.build.product_line=STM32H753xx
 PatchugoSeries.menu.pnum.PatchugOne.build.variant_h=variant_patchugolite.h
-PatchugoSeries.menu.pnum.PatchugOne.build.variant=STM32H7xx/H742Z(G-I)T_H743Z(G-I)T_H747A(G-I)I_H747I(G-I)T_H750ZBT_H753ZIT_H757AII_H757IIT
+PatchugoSeries.menu.pnum.PatchugOne.build.variant=STM32F4xx/F407V(E-G)T_F417V(E-G)T
 # PatchugoSeries.menu.pnum.PatchugOne.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
-PatchugoSeries.menu.pnum.PatchugOne.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
-# PatchugoSeries.menu.pnum.PatchugOne.build.st_extra_flags=-DCORE_CM7 -D{build.product_line} {build.enable_usb} {build.xSerial} -DARDUINO_PatchugoLite
+PatchugoSeries.menu.pnum.PatchugOne.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32F407.svd
 
 # Upload menu
 PatchugoSeries.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
