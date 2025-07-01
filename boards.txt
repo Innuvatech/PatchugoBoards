@@ -21,15 +21,15 @@ PatchugoSeries.name=PatchugoSeries
 
 PatchugoSeries.build.core=arduino
 PatchugoSeries.build.board=PatchugoSeries
-PatchugoSeries.build.st_extra_flags=-DCORE_CM7 -D{build.product_line} {build.enable_usb} {build.xSerial}
+PatchugoSeries.build.st_extra_flags=-DCORE_CM4 -D{build.product_line} {build.enable_usb} {build.xSerial}
 PatchugoSeries.build.fpu=-mfpu=fpv4-sp-d16
 PatchugoSeries.build.float-abi=-mfloat-abi=hard
-PatchugoSeries.build.series=STM32H7xx
-PatchugoSeries.build.mcu=cortex-m7
+PatchugoSeries.build.series=STM32F4xx
+PatchugoSeries.build.mcu=cortex-m4
 PatchugoSeries.build.flash_offset=0x0
 PatchugoSeries.upload.maximum_size=0
 PatchugoSeries.upload.maximum_data_size=0
-PatchugoSeries.openocd.target=stm32h7x
+PatchugoSeries.openocd.target=stm32f4x
 PatchugoSeries.vid.0=0x0483
 PatchugoSeries.pid.0=0x5740
 

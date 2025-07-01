@@ -10,8 +10,6 @@
  *
  *******************************************************************************
  */
-#if defined(ARDUINO_GENERIC_F407VETX) || defined(ARDUINO_GENERIC_F407VGTX) ||\
-    defined(ARDUINO_GENERIC_F417VETX) || defined(ARDUINO_GENERIC_F417VGTX)
 #include "pins_arduino.h"
 
 /**
@@ -60,5 +58,3 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
-
-#endif /* ARDUINO_GENERIC_* */
